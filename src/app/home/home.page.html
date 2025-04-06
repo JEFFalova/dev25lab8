@@ -8,9 +8,12 @@
 
 <ion-content [fullscreen]="true">
  <ion-title>
+  <!-- Displaying a label 'What is your Status:' -->
   what is your Status :
   {{myStatus}}
+  <!-- Displaying the value of the 'myStatus' variable dynamically. The {{}} syntax is Angular's interpolation for binding -->
  </ion-title>
-
+<!-- <ion-button> is a clickable button. [routerLink]="['/status']" makes the button navigate to the '/status' page when clicked -->
+ <!-- 'UPDATE STATUS' is the text shown inside the button -->
  <ion-button [routerLink]="['/status']">UPDATE STATUS</ion-button>
 </ion-content>
